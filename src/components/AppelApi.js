@@ -1,15 +1,23 @@
 import React from 'react';
+import './AppelApi.css';
 
 
-
-function AppelApi (){
-    return(
-        <div>
-            <h1>Hello world</h1>
-        </div>
-    )
-}
-
+function AppelApi({ citation }) {
+    return (
+      <div className="AppelApie">
+        <img
+          src={citation.image}
+          alt={citation.character}
+        />
+        <ul>
+          <li>
+           {citation.character}           
+          </li>
+        </ul>
+        <p>{citation.quote}</p>
+      </div>
+    );
+  };
 
 
 
